@@ -30,20 +30,24 @@ body{
 .Container{
     width: 70vmin;
     height: 70vmin;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.1vmin;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5%;
+    background-color: #a0e46f;
 }
 
 .box{
     background-color: rgb(245, 21, 21);
-    height: 22vmin;
-    width: 22vmin;
-    margin-left: 2em;
-    margin-top: 4em;
-    text-align: center;
+    display: flex;
+    width: 2.25em;
+    height: 2.25em;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
     font-family: "permanent Marker", cursive;
-    font-size: 10%;
+    font-size: 4rem;
 }
 
 .Reset{
@@ -59,12 +63,46 @@ body{
     border-radius: 5%;
 }
 
-.Reset:hover, .box:hover{
+
+.Popup{
+    background: linear-gradient(#3466c8, #7d1bab, #058814);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 8vmin;
+}
+
+.Message{
+    color: azure;
+    text-align: center;
+    font-size: 1em;
+}
+
+.New-Game{
+    background: black;
+    color: aqua;
+    border-radius: 7%;
+    padding: 1%;
+    font-size: 0.7em;
+    border: none;
+}
+
+.hide{
+    display: none;
+}
+
+.Reset:hover, .box:hover, .New-Game:hover{
     background-color: #89063f;
     cursor: pointer;
 }
 
-.Reset:active, .box:active{
+.Reset:active, .box:active, .New-Game:active{
     cursor: pointer;
     background-color: #ec8347;
 }
