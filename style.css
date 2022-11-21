@@ -27,6 +27,14 @@ body{
     padding: 2%;
 }
 
+.Maxi-Marquee{
+    background: #600b8b;
+    color:#5dea2e;
+    /* display: flex; */
+    /* justify-content: center;  */
+    padding: 4%; 
+}
+
 .Container{
     width: 70vmin;
     height: 70vmin;
